@@ -1,0 +1,48 @@
+.scroll-top {
+  display: none;
+  position: fixed;
+  right: 10px;
+  bottom: 40px;
+  width: 40px;
+  height: 40px;
+  border-color: transparent;
+  border-radius: 50%;
+  background-color: gray;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &::before {
+    width: 5px;
+    height: 20px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  &::after {
+    width: 15px;
+    height: 15px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-top: 5px solid rgba(255, 255, 255, 1);
+    border-left: 5px solid rgba(255, 255, 255, 1);
+  }
+}
+
+.scroll-top--visible {
+  display: block;
+  cursor: pointer;
+}
+
+.scroll-top:hover {
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/green-gobbler.png");
+  color: white;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 0px 4px 7px rgba(196, 201, 204, 0.51);
+}

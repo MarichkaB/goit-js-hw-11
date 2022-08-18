@@ -1,0 +1,45 @@
+.search-container {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
+
+  box-shadow: 0 1px 3px rgba(235, 235, 235, 0.12), 0 1px 1px rgba(207, 207, 207, 0.14),
+    0 2px 1px rgba(241, 241, 241, 0.2);
+  z-index: 1;
+}
+
+.search-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.search-form input {
+  width: 20%;
+  border-radius: 4px 0 0 4px;
+  border: none;
+  outline: none;
+  background-color: rgb(248, 248, 248);
+  padding: 8px 10px;
+  font: inherit;
+}
+
+.search-form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5em;
+  border: none;
+  background-color: rgb(200, 200, 200);
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.search-form button:hover,
+.search-form button:focus {
+  background-color: rgb(180, 180, 180);
+  transition: all 0.3s;
+}
